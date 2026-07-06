@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="BuildFlow — Commercial construction services in Dallas, Texas. General contracting, design-build, and tenant improvements for property owners and developers.">
+  <meta name="theme-color" content="#141414">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>BuildFlow | Commercial Construction — Dallas, Texas</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo" aria-label="BuildFlow home">
@@ -49,53 +53,52 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="hero bp-grid-bg" aria-label="Introduction">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=85&auto=format&fit=crop"
+          alt="Commercial construction site with steel framework at sunset"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <div class="hero-frame bp-frame bp-frame--full">
-          <p class="hero-eyebrow">Commercial Construction · Dallas, Texas · Est. 2001</p>
-          <h1>Building commercial spaces that perform for decades.</h1>
-          <p class="hero-lead">BuildFlow delivers office, retail, industrial, and mixed-use construction for property owners, developers, and business leaders across North Texas.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Request a Quote</a>
-            <a href="tel:+12145550187" class="btn btn-secondary">Call Now</a>
-          </div>
+        <p class="hero-eyebrow hero-animate">Commercial Construction · Dallas, Texas · Est. 2001</p>
+        <h1 class="hero-animate">Building commercial spaces that perform for decades.</h1>
+        <p class="hero-lead hero-animate">BuildFlow delivers office, retail, industrial, and mixed-use construction for property owners, developers, and business leaders across North Texas.</p>
+        <div class="hero-actions hero-animate">
+          <a href="#contact" class="btn btn-primary">Request a Quote</a>
+          <a href="tel:+12145550187" class="btn btn-secondary">Call Now</a>
         </div>
       </div>
     </section>
 
-    <!-- Company Statistics -->
     <section class="stats" aria-label="Company statistics">
       <div class="container">
-        <div class="title-block bp-frame">
-          <div class="title-block-header">
-            <span class="title-block-meta">BuildFlow — Company Data</span>
-            <span class="title-block-meta title-block-meta--accent">Sheet 01 / Rev. A</span>
-          </div>
-          <ul class="stats-grid">
-            <li>
-              <span class="stat-value">2001</span>
-              <span class="stat-label">Year Founded</span>
-            </li>
-            <li>
-              <span class="stat-value">480+</span>
-              <span class="stat-label">Commercial Projects</span>
-            </li>
-            <li>
-              <span class="stat-value">$20M</span>
-              <span class="stat-label">Annual Contract Volume</span>
-            </li>
-            <li>
-              <span class="stat-value">165</span>
-              <span class="stat-label">Team Members</span>
-            </li>
-          </ul>
-        </div>
+        <ul class="stats-grid">
+          <li class="stat-item">
+            <span class="stat-value" data-count="24">24+</span>
+            <span class="stat-label">Years in Business</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-value">480+</span>
+            <span class="stat-label">Commercial Projects</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-value">$20M</span>
+            <span class="stat-label">Annual Contract Volume</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-value" data-count="165">165</span>
+            <span class="stat-label">Team Members</span>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section class="section section--paper projects" id="projects" aria-labelledby="projects-heading">
+    <section class="section projects reveal" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <header class="section-header">
           <p class="section-eyebrow">Portfolio</p>
@@ -104,13 +107,13 @@
         </header>
       </div>
       <div class="projects-grid">
-        <article class="project-card project-card--large">
+        <article class="project-card project-card--large reveal">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
-              alt="Glass office tower exterior at dusk"
-              width="1200"
-              height="800"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=85&auto=format&fit=crop"
+              alt="Glass office tower exterior reflecting the sky at dusk"
+              width="1400"
+              height="900"
               loading="lazy"
             >
             <div class="project-info">
@@ -120,13 +123,13 @@
             </div>
           </a>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
-              alt="Modern corporate office interior with open workspace"
-              width="800"
-              height="600"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85&auto=format&fit=crop"
+              alt="Modern corporate office interior with glass walls and open workspace"
+              width="900"
+              height="650"
               loading="lazy"
             >
             <div class="project-info">
@@ -136,13 +139,13 @@
             </div>
           </a>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80"
-              alt="Large industrial distribution warehouse exterior"
-              width="800"
-              height="600"
+              src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=900&q=85&auto=format&fit=crop"
+              alt="Large industrial distribution warehouse with loading docks"
+              width="900"
+              height="650"
               loading="lazy"
             >
             <div class="project-info">
@@ -152,13 +155,13 @@
             </div>
           </a>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80"
-              alt="Mixed-use urban building with retail storefronts"
-              width="800"
-              height="600"
+              src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=85&auto=format&fit=crop"
+              alt="Mixed-use urban street with retail storefronts and commercial buildings"
+              width="900"
+              height="650"
               loading="lazy"
             >
             <div class="project-info">
@@ -168,13 +171,13 @@
             </div>
           </a>
         </article>
-        <article class="project-card">
+        <article class="project-card reveal">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80"
-              alt="Modern hospital and medical center building exterior"
-              width="800"
-              height="600"
+              src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=900&q=85&auto=format&fit=crop"
+              alt="Modern hospital building exterior with glass facade"
+              width="900"
+              height="650"
               loading="lazy"
             >
             <div class="project-info">
@@ -187,8 +190,7 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section section--paper services" id="services" aria-labelledby="services-heading">
+    <section class="section services reveal" id="services" aria-labelledby="services-heading">
       <div class="container">
         <header class="section-header section-header--split">
           <div>
@@ -198,52 +200,52 @@
           <p class="section-desc">Full-service general contracting for owners who require predictable outcomes, transparent communication, and experienced field leadership.</p>
         </header>
         <div class="services-layout">
-          <div class="services-image">
+          <div class="services-image reveal">
             <img
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80"
-              alt="Construction professionals reviewing architectural plans on site"
-              width="900"
-              height="1100"
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1000&q=85&auto=format&fit=crop"
+              alt="Construction professionals reviewing architectural blueprints on site"
+              width="1000"
+              height="1200"
               loading="lazy"
             >
           </div>
           <ul class="services-list">
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">01</span>
               <div>
                 <h3>General Contracting</h3>
                 <p>Ground-up commercial construction with dedicated project management, subcontractor coordination, and owner reporting from preconstruction through closeout.</p>
               </div>
             </li>
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">02</span>
               <div>
                 <h3>Design-Build</h3>
                 <p>Single-source delivery that aligns design, budget, and schedule early — reducing change orders and accelerating occupancy for developers and business owners.</p>
               </div>
             </li>
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">03</span>
               <div>
                 <h3>Tenant Improvements</h3>
                 <p>Office, retail, and medical build-outs executed with minimal disruption to existing tenants and strict adherence to landlord standards.</p>
               </div>
             </li>
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">04</span>
               <div>
                 <h3>Preconstruction</h3>
                 <p>Budget validation, value engineering, scheduling, and permitting support to establish a reliable project baseline before breaking ground.</p>
               </div>
             </li>
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">05</span>
               <div>
                 <h3>Construction Management</h3>
                 <p>Owner's representative services for complex multi-phase developments requiring independent oversight and trade coordination.</p>
               </div>
             </li>
-            <li class="service-item">
+            <li class="service-item reveal">
               <span class="service-num">06</span>
               <div>
                 <h3>Renovation &amp; Repositioning</h3>
@@ -255,8 +257,7 @@
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section section--dark about" id="about" aria-labelledby="about-heading">
+    <section class="section about reveal" id="about" aria-labelledby="about-heading">
       <div class="container about-grid">
         <div class="about-content">
           <p class="section-eyebrow">About BuildFlow</p>
@@ -279,23 +280,21 @@
             </div>
           </dl>
         </div>
-        <div class="about-images">
-          <div class="about-img-wrap">
+        <div class="about-images reveal">
+          <div class="about-photo-stack">
             <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80"
-              alt="Professional team meeting in a modern office"
-              width="700"
-              height="500"
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=85&auto=format&fit=crop"
+              alt="Professional construction team meeting in a modern office"
+              width="800"
+              height="560"
               loading="lazy"
               class="about-img-main"
             >
-          </div>
-          <div class="about-img-wrap">
             <img
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80"
-              alt="Construction engineer reviewing blueprints at a commercial job site"
-              width="500"
-              height="400"
+              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700&q=85&auto=format&fit=crop"
+              alt="Modern commercial building with glass and concrete architecture"
+              width="700"
+              height="520"
               loading="lazy"
               class="about-img-secondary"
             >
@@ -304,8 +303,7 @@
       </div>
     </section>
 
-    <!-- Safety & Certifications -->
-    <section class="section section--dark bp-grid-bg safety" id="safety" aria-labelledby="safety-heading">
+    <section class="section safety reveal" id="safety" aria-labelledby="safety-heading">
       <div class="container">
         <header class="section-header section-header--center">
           <p class="section-eyebrow">Safety &amp; Compliance</p>
@@ -315,21 +313,21 @@
         <div class="safety-grid">
           <div class="safety-content">
             <ul class="safety-points">
-              <li>
+              <li class="reveal">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 <div>
                   <h3>OSHA Compliance</h3>
                   <p>Site-specific safety plans, daily toolbox talks, and zero-tolerance policies for recognized hazards on every active job site.</p>
                 </div>
               </li>
-              <li>
+              <li class="reveal">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 <div>
                   <h3>EMR Rating: 0.72</h3>
                   <p>Experience Modification Rate consistently below industry average, reflecting our commitment to worker safety and loss prevention.</p>
                 </div>
               </li>
-              <li>
+              <li class="reveal">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
                 <div>
                   <h3>LEED &amp; Sustainable Practices</h3>
@@ -338,7 +336,7 @@
               </li>
             </ul>
           </div>
-          <div class="certifications">
+          <div class="certifications reveal">
             <p class="cert-label">Certifications &amp; Affiliations</p>
             <ul class="cert-list">
               <li>AGC of America — Member</li>
@@ -350,41 +348,40 @@
             </ul>
           </div>
         </div>
-        <div class="safety-banner">
+        <div class="safety-banner reveal">
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&q=80"
-            alt="Active commercial construction site with safety equipment and workers"
-            width="1400"
-            height="500"
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=85&auto=format&fit=crop"
+            alt="Active commercial construction site with workers and safety equipment"
+            width="1600"
+            height="560"
             loading="lazy"
           >
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section section--paper testimonials" aria-labelledby="testimonials-heading">
+    <section class="section testimonials reveal" aria-labelledby="testimonials-heading">
       <div class="container">
         <header class="section-header">
           <p class="section-eyebrow">Client References</p>
           <h2 id="testimonials-heading">What Our Clients Say</h2>
         </header>
         <div class="testimonials-grid">
-          <blockquote class="testimonial">
+          <blockquote class="testimonial reveal">
             <p>"BuildFlow delivered our 42,000 SF headquarters renovation two weeks ahead of schedule. Their superintendent kept our operations running throughout the build-out — a level of coordination we rarely see from general contractors."</p>
             <footer>
               <cite>Robert Chen</cite>
               <span>VP of Operations, Meridian Financial Group</span>
             </footer>
           </blockquote>
-          <blockquote class="testimonial">
+          <blockquote class="testimonial reveal">
             <p>"As a developer, I need predictable numbers and transparent reporting. BuildFlow's preconstruction team gave us a budget we could take to our lender, and the final cost came in within 1.2% of that estimate."</p>
             <footer>
               <cite>Sarah Whitfield</cite>
               <span>Managing Partner, Whitfield Development Co.</span>
             </footer>
           </blockquote>
-          <blockquote class="testimonial">
+          <blockquote class="testimonial reveal">
             <p>"We've worked with BuildFlow on three industrial projects over six years. Their safety record, subcontractor relationships, and responsiveness to our architect's RFIs make them our first call for commercial work in DFW."</p>
             <footer>
               <cite>James Holloway, AIA</cite>
@@ -395,8 +392,7 @@
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section section--dark faq" aria-labelledby="faq-heading">
+    <section class="section faq reveal" aria-labelledby="faq-heading">
       <div class="container faq-layout">
         <header class="section-header">
           <p class="section-eyebrow">Common Questions</p>
@@ -474,8 +470,7 @@
       </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="section section--dark bp-grid-bg cta" id="contact" aria-labelledby="cta-heading">
+    <section class="section cta reveal" id="contact" aria-labelledby="cta-heading">
       <div class="container cta-grid">
         <div class="cta-content">
           <p class="section-eyebrow section-eyebrow--light">Start Your Project</p>
@@ -486,7 +481,7 @@
             <a href="mailto:projects@buildflow.com" class="cta-email">projects@buildflow.com</a>
           </div>
         </div>
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form reveal" action="#" method="post">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -500,11 +495,11 @@
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required autocomplete="email">
+              <input type="email" id="email" name="email" required autocomplete="email" inputmode="email">
             </div>
             <div class="form-group">
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" inputmode="tel">
             </div>
           </div>
           <div class="form-group">
@@ -530,7 +525,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">

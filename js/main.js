@@ -7,10 +7,13 @@
   const mobileLinks = mobileMenu?.querySelectorAll('a');
   const contactForm = document.querySelector('.contact-form');
   const faqItems = document.querySelectorAll('.faq-item');
+  const revealEls = document.querySelectorAll('.reveal');
+  const statItems = document.querySelectorAll('.stat-item');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Header scroll state */
+  /* Header scroll */
   function onScroll() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 16) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -25,6 +28,7 @@
     menuToggle.setAttribute('aria-expanded', 'false');
     menuToggle.setAttribute('aria-label', 'Open menu');
     mobileMenu.hidden = true;
+    mobileMenu.classList.remove('is-open');
     document.body.style.overflow = '';
   }
 
@@ -32,16 +36,16 @@
     menuToggle.setAttribute('aria-expanded', 'true');
     menuToggle.setAttribute('aria-label', 'Close menu');
     mobileMenu.hidden = false;
+    requestAnimationFrame(function () {
+      mobileMenu.classList.add('is-open');
+    });
     document.body.style.overflow = 'hidden';
   }
 
   menuToggle?.addEventListener('click', function () {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-    if (isOpen) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
+    if (isOpen) closeMenu();
+    else openMenu();
   });
 
   mobileLinks?.forEach(function (link) {
@@ -55,6 +59,39 @@
     }
   });
 
+  /* Scroll reveal */
+  if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+
+    const statsObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          statItems.forEach(function (item) {
+            item.classList.add('is-visible');
+          });
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) statsObserver.observe(statsSection);
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    statItems.forEach(function (item) { item.classList.add('is-visible'); });
+  }
+
   /* FAQ accordion */
   function closeFaqItem(item) {
     const button = item.querySelector('.faq-question');
@@ -66,13 +103,6 @@
       item.classList.remove('is-open');
       button.setAttribute('aria-expanded', 'false');
       answer.style.height = '0px';
-    });
-
-    answer.addEventListener('transitionend', function onClose() {
-      if (!item.classList.contains('is-open')) {
-        answer.hidden = true;
-      }
-      answer.removeEventListener('transitionend', onClose);
     });
   }
 
@@ -86,13 +116,6 @@
     item.classList.add('is-open');
     button.setAttribute('aria-expanded', 'true');
     answer.style.height = inner.scrollHeight + 'px';
-
-    answer.addEventListener('transitionend', function onOpen() {
-      if (item.classList.contains('is-open')) {
-        answer.style.height = 'auto';
-      }
-      answer.removeEventListener('transitionend', onOpen);
-    });
   }
 
   faqItems.forEach(function (item) {
@@ -106,16 +129,15 @@
         if (other !== item) closeFaqItem(other);
       });
 
-      if (isOpen) {
-        closeFaqItem(item);
-      } else {
-        openFaqItem(item);
-      }
+      if (isOpen) closeFaqItem(item);
+      else openFaqItem(item);
     });
 
     answer?.addEventListener('transitionend', function (e) {
       if (e.propertyName !== 'height') return;
-      if (!item.classList.contains('is-open')) {
+      if (item.classList.contains('is-open')) {
+        answer.style.height = 'auto';
+      } else {
         answer.hidden = true;
         answer.style.height = '0px';
       }
