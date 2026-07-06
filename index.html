@@ -7,7 +7,7 @@
   <title>BuildFlow | Commercial Construction — Dallas, Texas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo" aria-label="BuildFlow home">
-        <span class="logo-mark">BF</span>
         <span class="logo-text">BuildFlow</span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
@@ -51,24 +50,16 @@
   <main>
 
     <!-- Hero -->
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-media">
-        <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-          alt="Commercial construction site with steel framework and workers"
-          width="1920"
-          height="1080"
-          fetchpriority="high"
-        >
-      </div>
-      <div class="hero-overlay"></div>
+    <section class="hero bp-grid-bg" aria-label="Introduction">
       <div class="container hero-content">
-        <p class="hero-eyebrow">Commercial Construction · Dallas, Texas · Est. 2001</p>
-        <h1>Building commercial spaces that perform for decades.</h1>
-        <p class="hero-lead">BuildFlow delivers office, retail, industrial, and mixed-use construction for property owners, developers, and business leaders across North Texas.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Request a Quote</a>
-          <a href="tel:+12145550187" class="btn btn-secondary">Call Now</a>
+        <div class="hero-frame bp-frame bp-frame--full">
+          <p class="hero-eyebrow">Commercial Construction · Dallas, Texas · Est. 2001</p>
+          <h1>Building commercial spaces that perform for decades.</h1>
+          <p class="hero-lead">BuildFlow delivers office, retail, industrial, and mixed-use construction for property owners, developers, and business leaders across North Texas.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request a Quote</a>
+            <a href="tel:+12145550187" class="btn btn-secondary">Call Now</a>
+          </div>
         </div>
       </div>
     </section>
@@ -76,29 +67,35 @@
     <!-- Company Statistics -->
     <section class="stats" aria-label="Company statistics">
       <div class="container">
-        <ul class="stats-grid">
-          <li>
-            <span class="stat-value">24+</span>
-            <span class="stat-label">Years in Business</span>
-          </li>
-          <li>
-            <span class="stat-value">480+</span>
-            <span class="stat-label">Commercial Projects</span>
-          </li>
-          <li>
-            <span class="stat-value">$20M</span>
-            <span class="stat-label">Annual Contract Volume</span>
-          </li>
-          <li>
-            <span class="stat-value">165</span>
-            <span class="stat-label">Team Members</span>
-          </li>
-        </ul>
+        <div class="title-block bp-frame">
+          <div class="title-block-header">
+            <span class="title-block-meta">BuildFlow — Company Data</span>
+            <span class="title-block-meta title-block-meta--accent">Sheet 01 / Rev. A</span>
+          </div>
+          <ul class="stats-grid">
+            <li>
+              <span class="stat-value">2001</span>
+              <span class="stat-label">Year Founded</span>
+            </li>
+            <li>
+              <span class="stat-value">480+</span>
+              <span class="stat-label">Commercial Projects</span>
+            </li>
+            <li>
+              <span class="stat-value">$20M</span>
+              <span class="stat-label">Annual Contract Volume</span>
+            </li>
+            <li>
+              <span class="stat-value">165</span>
+              <span class="stat-label">Team Members</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Featured Projects -->
-    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+    <section class="section section--paper projects" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <header class="section-header">
           <p class="section-eyebrow">Portfolio</p>
@@ -142,8 +139,8 @@
         <article class="project-card">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80"
-              alt="Industrial warehouse with steel structure"
+              src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80"
+              alt="Large industrial distribution warehouse exterior"
               width="800"
               height="600"
               loading="lazy"
@@ -174,8 +171,8 @@
         <article class="project-card">
           <a href="#contact" class="project-link">
             <img
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80"
-              alt="Healthcare facility construction exterior"
+              src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80"
+              alt="Modern hospital and medical center building exterior"
               width="800"
               height="600"
               loading="lazy"
@@ -191,7 +188,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section services" id="services" aria-labelledby="services-heading">
+    <section class="section section--paper services" id="services" aria-labelledby="services-heading">
       <div class="container">
         <header class="section-header section-header--split">
           <div>
@@ -259,7 +256,7 @@
     </section>
 
     <!-- About -->
-    <section class="section about" id="about" aria-labelledby="about-heading">
+    <section class="section section--dark about" id="about" aria-labelledby="about-heading">
       <div class="container about-grid">
         <div class="about-content">
           <p class="section-eyebrow">About BuildFlow</p>
@@ -283,28 +280,32 @@
           </dl>
         </div>
         <div class="about-images">
-          <img
-            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80"
-            alt="Professional team meeting in a modern office"
-            width="700"
-            height="500"
-            loading="lazy"
-            class="about-img-main"
-          >
-          <img
-            src="https://images.unsplash.com/photo-1590859808308-8775f8a3a32c?w=500&q=80"
-            alt="Construction superintendent reviewing steel structure on site"
-            width="500"
-            height="400"
-            loading="lazy"
-            class="about-img-secondary"
-          >
+          <div class="about-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80"
+              alt="Professional team meeting in a modern office"
+              width="700"
+              height="500"
+              loading="lazy"
+              class="about-img-main"
+            >
+          </div>
+          <div class="about-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80"
+              alt="Construction engineer reviewing blueprints at a commercial job site"
+              width="500"
+              height="400"
+              loading="lazy"
+              class="about-img-secondary"
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Safety & Certifications -->
-    <section class="section safety" id="safety" aria-labelledby="safety-heading">
+    <section class="section section--dark bp-grid-bg safety" id="safety" aria-labelledby="safety-heading">
       <div class="container">
         <header class="section-header section-header--center">
           <p class="section-eyebrow">Safety &amp; Compliance</p>
@@ -362,7 +363,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section testimonials" aria-labelledby="testimonials-heading">
+    <section class="section section--paper testimonials" aria-labelledby="testimonials-heading">
       <div class="container">
         <header class="section-header">
           <p class="section-eyebrow">Client References</p>
@@ -395,44 +396,86 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section faq" aria-labelledby="faq-heading">
+    <section class="section section--dark faq" aria-labelledby="faq-heading">
       <div class="container faq-layout">
         <header class="section-header">
           <p class="section-eyebrow">Common Questions</p>
           <h2 id="faq-heading">Frequently Asked Questions</h2>
           <p class="section-desc">Answers to questions property owners, developers, and architects commonly ask before engaging a commercial general contractor.</p>
         </header>
-        <div class="faq-list" role="list">
-          <details class="faq-item">
-            <summary>What types of commercial projects does BuildFlow handle?</summary>
-            <p>We specialize in office buildings, tenant improvements, industrial and warehouse facilities, retail, healthcare, and mixed-use developments. Project sizes typically range from 5,000 to 300,000 square feet across North Texas.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What is your typical project timeline from contract to completion?</summary>
-            <p>Timelines vary by scope and permitting requirements. Tenant improvements generally run 12–20 weeks; ground-up commercial projects range from 10 to 24 months. We provide a detailed master schedule during preconstruction before contract execution.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Do you work directly with architects and design teams?</summary>
-            <p>Yes. We regularly partner with architecture firms on design-bid-build and design-build delivery. Our project managers are experienced in coordinating RFIs, submittals, and field conditions with design professionals throughout construction.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How does BuildFlow approach budgeting and change orders?</summary>
-            <p>We establish a detailed baseline budget during preconstruction with line-item transparency. Change orders are documented with cost and schedule impact before work proceeds. Our average change order rate on completed projects is below 3% of contract value.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Are you licensed and insured in Texas?</summary>
-            <p>BuildFlow holds an active Texas general contractor license and maintains general liability, workers' compensation, and builder's risk coverage on all projects. Certificates of insurance are provided upon request during the prequalification process.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What geographic area do you serve?</summary>
-            <p>Our primary service area is the Dallas–Fort Worth metroplex, including Dallas, Tarrant, Collin, and Denton counties. We evaluate select projects in surrounding Texas markets on a case-by-case basis.</p>
-          </details>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What types of commercial projects does BuildFlow handle?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>We specialize in office buildings, tenant improvements, industrial and warehouse facilities, retail, healthcare, and mixed-use developments. Project sizes typically range from 5,000 to 300,000 square feet across North Texas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What is your typical project timeline from contract to completion?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>Timelines vary by scope and permitting requirements. Tenant improvements generally run 12–20 weeks; ground-up commercial projects range from 10 to 24 months. We provide a detailed master schedule during preconstruction before contract execution.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do you work directly with architects and design teams?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>Yes. We regularly partner with architecture firms on design-bid-build and design-build delivery. Our project managers are experienced in coordinating RFIs, submittals, and field conditions with design professionals throughout construction.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How does BuildFlow approach budgeting and change orders?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>We establish a detailed baseline budget during preconstruction with line-item transparency. Change orders are documented with cost and schedule impact before work proceeds. Our average change order rate on completed projects is below 3% of contract value.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Are you licensed and insured in Texas?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>BuildFlow holds an active Texas general contractor license and maintains general liability, workers' compensation, and builder's risk coverage on all projects. Certificates of insurance are provided upon request during the prequalification process.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What geographic area do you serve?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div class="faq-answer-inner">
+                <p>Our primary service area is the Dallas–Fort Worth metroplex, including Dallas, Tarrant, Collin, and Denton counties. We evaluate select projects in surrounding Texas markets on a case-by-case basis.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="section cta" id="contact" aria-labelledby="cta-heading">
+    <section class="section section--dark bp-grid-bg cta" id="contact" aria-labelledby="cta-heading">
       <div class="container cta-grid">
         <div class="cta-content">
           <p class="section-eyebrow section-eyebrow--light">Start Your Project</p>
@@ -492,7 +535,6 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#top" class="logo logo--footer">
-          <span class="logo-mark">BF</span>
           <span class="logo-text">BuildFlow</span>
         </a>
         <p class="footer-tagline">Commercial Construction</p>
